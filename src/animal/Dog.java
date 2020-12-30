@@ -3,9 +3,8 @@ package animal;
 public class Dog {
 
     //declare fields
-    private String breed;
+    private String breed, behavior;
     private int lifespan;
-    private String behavior;
     private double price;
 
     //Declare Constructor
