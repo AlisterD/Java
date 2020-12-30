@@ -1,54 +1,17 @@
 package animal;
 
-public class Dog {
+public class Dog extends Animal {
+    private String sound;
 
-    //declare fields
-    private String breed, behavior;
-    private int lifespan;
-    private double price;
-
-    //Declare Constructor
-
-    public Dog(String breed, int lifespan, String behavior, double price )
-    {
-        this.breed = breed;
-        this.lifespan= lifespan;
-        this.behavior= behavior;
-        this.price= price;
-
-
-    }
-    //Declare Methods -Getter and setters
-    public int getLifespan() {
-        return lifespan;
+    public Dog(String breed, String behavior, int lifespan, double price) {
+        super(breed, behavior, lifespan, price);
     }
 
-    public void setLifespan(int lifespan) {
-        this.lifespan = lifespan;
+    public String getSound() {
+        return "Woof Woof!";
     }
 
-    public String getBehavior() {
-        return behavior;
-    }
-
-    public void setBehavior(String behavior) {
-        this.behavior = behavior;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 }
