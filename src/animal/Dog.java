@@ -5,6 +5,7 @@ public class Dog extends Animal {
 
     public Dog(String breed, String behavior, int lifespan, double price) {
         super(breed, behavior, lifespan, price);
+        // If you want to call methods in the superclass and give it a value: super.setBreed("Golden Retriever");
     }
 
     public String getSound() {
@@ -14,4 +15,6 @@ public class Dog extends Animal {
     public void setSound(String sound) {
         this.sound = sound;
     }
+
+
 }

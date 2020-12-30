@@ -7,12 +7,22 @@ public class Animal {
     private String breed, behavior;
     private int lifespan;
     private double price;
+    private static String seller;
+
 
     public Animal(String breed, String behavior, int lifespan, double price) {
         this.breed = breed;
         this.behavior = behavior;
         this.lifespan = lifespan;
         this.price = price;
+    }
+
+    public static String getSeller() {
+        return seller;
+    }
+
+    public static void setSeller(String seller) {
+        Animal.seller = seller;
     }
 
     public String getBreed() {
